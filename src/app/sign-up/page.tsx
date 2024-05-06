@@ -9,7 +9,7 @@ const SignupPage = (props: Props) => {
       <div>
         <img
           className="w-full h-full object-cover shrink-0"
-          src="/Signin.jpeg"
+          src="/Sign-in.jpeg"
           alt="image"
         />
       </div>
