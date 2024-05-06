@@ -28,14 +28,21 @@ export function SignUp() {
 
   const handleSignUp = async () => {
     try {
-      const res = await createUserWithEmailAndPassword(email, password);
-      console.log({ res });
-      setEmail("");
-      setPassword("");
-      router.push("/");
-      toast({
-        description: "Successfully signed up!",
-      });
+      if (!email || !password) {
+        toast({
+          variant: "destructive",
+          description: "All fields are neccessary!",
+        });
+      } else {
+        const res = await createUserWithEmailAndPassword(email, password);
+        console.log({ res });
+        setEmail("");
+        setPassword("");
+        router.push("/");
+        toast({
+          description: "Successfully signed up!",
+        });
+      }
     } catch (error) {
       console.log(error);
     }

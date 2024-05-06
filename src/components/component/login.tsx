@@ -29,14 +29,21 @@ export function Login() {
 
   const handleLogin = async () => {
     try {
-      const res = signInWithEmailAndPassword(email, password);
-      console.log({ res });
-      setEmail("");
-      setPassword("");
-      router.push("/");
-      toast({
-        description: "You're now logged in!",
-      });
+      if (!email || !password) {
+        toast({
+          variant: "destructive",
+          description: "All fields are neccessary!",
+        });
+      } else {
+        const res = signInWithEmailAndPassword(email, password);
+        console.log({ res });
+        setEmail("");
+        setPassword("");
+        router.push("/");
+        toast({
+          description: "You're now logged in!",
+        });
+      }
     } catch (error) {
       console.log(error);
     }
