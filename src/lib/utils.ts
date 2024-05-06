@@ -28,13 +28,13 @@ export const data = [
     name: "Rust",
     src: "/rust.jpg",
     description:
-      "Rust is a modern systems programming language known for its memory safety and concurrency features, gaining popularity for high-performance applications",
+      "Rust is a modern systems programming language known for its memory safety gaining popularity for high-performance applications",
   },
   {
     name: "Python",
     src: "/python.jpg",
     description:
-      "Python is a versatile, high-level programming language known for its extensive libraries, making it popular for various tasks, web development, and automation.",
+      "Python is a versatile, high-level programming language known for its extensive libraries, making it popular for various and automation.",
   },
   {
     name: "AI",
