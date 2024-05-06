@@ -24,7 +24,9 @@ export default function Home() {
   return (
     <div className="my-12">
       <div className="">
-        <h1 className="text-center text-2xl font-semibold">Popular Topics</h1>
+        <h1 className="text-center text-2xl font-semibold">
+          Popular Topics 🔥
+        </h1>
       </div>
       <div className="my-6">
         <CardComponent />
